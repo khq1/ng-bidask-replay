@@ -1,0 +1,24 @@
+<div >
+
+
+
+    <table class="customTable">
+        <div>
+
+            Time: {{bidasks.datetime | date:'long' }}
+        </div>
+
+        <tbody>
+            <tr>
+                <td>Ask</td>
+                <td>{{bidasks.ask | currency:'EUR':'symbol':'.2-2'}}</td>
+                <td>x {{bidasks.ask_size}}</td>
+            </tr>
+            <tr>
+                <td>Bid</td>
+                <td>{{bidasks.bid | currency:'EUR':'symbol':'.2-2'}}</td>
+                <td>x {{bidasks.bid_size}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
